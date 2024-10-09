@@ -3,10 +3,11 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 
+
 const tabs = [
-  { id: 'web', label: 'Web Design', image: '/placeholder.svg?height=600&width=800' },
-  { id: 'app', label: 'App Design', image: '/placeholder.svg?height=600&width=800' },
-  { id: 'graphic', label: 'Graphic Design', image: '/placeholder.svg?height=600&width=800' },
+  { id: 'web', label: 'Web Design', image: '/images/laptop1.png' },
+  { id: 'app', label: 'App Design', image: '/images/mobile1.png' },
+  { id: 'graphic', label: 'Graphic Design', image: '/images/laptop2.png' },
 ]
 
 const ExpertiseSlider =()=> {
@@ -15,11 +16,11 @@ const ExpertiseSlider =()=> {
   return (
 
     <section className='z-10 relative'>
-    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center p-4">
+    <div className="bg-black text-white min-h-screen flex flex-col items-center justify-center ">
       <h2 className="text-2xl md:text-4xl font-light tracking-widest mb-2">YOUR VISION</h2>
       <h1 className="text-4xl md:text-6xl font-bold mb-8">OUR EXPERTISE</h1>
       
-      <div className="w-full max-w-3xl">
+      <div className="w-full max-w-full">
         <nav className="flex justify-center mb-8">
           {tabs.map((tab) => (
             <button
